@@ -4,186 +4,197 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Destination Guide</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-
-  <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: linear-gradient(to bottom, #e6f0ff, #f5f7fa); min-height: 100vh;">
-    <header style="background-color: #1e88e5; color: white; padding: 20px 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-      <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-        <h1 style="margin: 0; font-size: 2.5rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Travel Destination Guide</h1>
-        <nav style="margin-top: 15px;">
-          <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 20px;">
-            <li><a href="#destinations" style="color: white; text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px; background-color: rgba(255,255,255,0.1);">Destinations</a></li>
-            <li><a href="#tips" style="color: white; text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">Travel Tips</a></li>
-            <li><a href="#about" style="color: white; text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">About</a></li>
-            <li><a href="#contact" style="color: white; text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">Contact</a></li>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Travel Destination Guide</h1>
+        <nav>
+          <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#tips">Travel Tips</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
-      <div id="destinations" style="margin-bottom: 60px;">
-        <h2 style="font-size: 2rem; color: #1e88e5; margin-bottom: 30px; border-bottom: 2px solid #1e88e5; padding-bottom: 10px;">Popular Destinations</h2>
+    <main class="container">
+      <section id="destinations">
+        <h2>Popular Destinations</h2>
         
-        <div style="background-color: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 25px; margin-bottom: 40px; transition: transform 0.3s ease;">
-          <h3 style="font-size: 28px; color: #333; margin-top: 0;">Santorini, Greece</h3>
-          <div style="display: flex; flex-wrap: wrap; gap: 30px;">
-            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Santorini" width="400" height="300" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); max-width: 100%;">
-            <div style="flex: 1; min-width: 300px;">
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Rating:</strong> 4.8/5 ⭐⭐⭐⭐⭐</p>
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Location:</strong> Greece</p>
-              <p style="font-size: 16px; line-height: 1.6;">Famous for its stunning sunsets, white-washed buildings, and blue domes overlooking the sea. Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape.</p>
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Best time to visit:</strong> April to October</p>
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Must-see attractions:</strong></p>
-              <ul style="padding-left: 20px;">
-                <li style="margin-bottom: 8px;">Oia Village</li>
-                <li style="margin-bottom: 8px;">Fira Town</li>
-                <li style="margin-bottom: 8px;">Red Beach</li>
-                <li style="margin-bottom: 8px;">Ancient Thera</li>
+        <article class="destination-card">
+          <h3>Santorini, Greece</h3>
+          <div class="destination-content">
+            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Santorini">
+            <div class="destination-info">
+              <p class="rating">Rating: 4.8/5 ⭐⭐⭐⭐⭐</p>
+              <p class="location">Location: Greece</p>
+              <p class="description">Famous for its stunning sunsets, white-washed buildings, and blue domes overlooking the sea. Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape.</p>
+              <p>Best time to visit: April to October</p>
+              <p>Must-see attractions:</p>
+              <ul>
+                <li>Oia Village</li>
+                <li>Fira Town</li>
+                <li>Red Beach</li>
+                <li>Ancient Thera</li>
               </ul>
-              
-              <a href="https://en.wikipedia.org/wiki/Santorini" style="display: inline-block; background-color: #1e88e5; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: 500; margin-top: 15px; transition: background-color 0.3s ease;" target = "_blank">Learn more about Santorini</a>
+              <a href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwNyixNGD0EihOzCvJL8rMy1RIL0pNTU4FAHYSCQ8&q=santorini+greece&rlz=1C1ONGR_enIN980IN980&oq=santorini+&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBwgAEAAYjwIyCggBEC4YsQMYgAQyDQgCEC4YrwEYxwEYgAQyBwgDEAAYgAQyEwgEEC4YrwEYxwEYgAQYmAUYmQUyBwgFEAAYgAQyEwgGEC4YgwEYrwEYxwEYsQMYgAQyDQgHEC4YrwEYxwEYgAQyBwgIEAAYjwLSAQk2MDc4ajBqMTWoAgiwAgHxBcIOLKSbM2Ds8QXCDiykmzNg7PEFwg4spJszYOw&sourceid=chrome&ie=UTF-8" target = "_blank" class="explore-btn">Learn more about Santorini</a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); margin: 40px 0;">
-
-        <div style="background-color: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 25px; margin-bottom: 40px; transition: transform 0.3s ease;">
-          <h3 style="font-size: 28px; color: #333; margin-top: 0;">Bali, Indonesia</h3>
-          <div style="display: flex; flex-wrap: wrap; gap: 30px;">
-            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali" width="400" height="300" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(235, 3, 3, 0.2); max-width: 100%;">
-            <div style="flex: 1; min-width: 300px;">
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Rating:</strong> 4.7/5 ⭐⭐⭐⭐⭐</p>
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Location:</strong> Indonesia</p>
-              <p style="font-size: 16px; line-height: 1.6;">A tropical paradise known for its lush rice terraces, beautiful beaches, and vibrant culture. Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs.</p>
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Best time to visit:</strong> April to October</p>
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Must-see attractions:</strong></p>
-              <ul style="padding-left: 20px;">
-                <li style="margin-bottom: 8px;">Ubud Monkey Forest</li>
-                <li style="margin-bottom: 8px;">Tegallalang Rice Terraces</li>
-                <li style="margin-bottom: 8px;">Uluwatu Temple</li>
-                <li style="margin-bottom: 8px;">Seminyak Beach</li>
+        <article class="destination-card">
+          <h3>Bali, Indonesia</h3>
+          <div class="destination-content">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali">
+            <div class="destination-info">
+              <p class="rating">Rating: 4.7/5 ⭐⭐⭐⭐⭐</p>
+              <p class="location">Location: Indonesia</p>
+              <p class="description">A tropical paradise known for its lush rice terraces, beautiful beaches, and vibrant culture. Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs.</p>
+              <p>Best time to visit: April to October</p>
+              <p>Must-see attractions:</p>
+              <ul>
+                <li>Ubud Monkey Forest</li>
+                <li>Tegallalang Rice Terraces</li>
+                <li>Uluwatu Temple</li>
+                <li>Seminyak Beach</li>
               </ul>
-              <a href="https://en.wikipedia.org/wiki/Bali" style="display: inline-block; background-color: #1e88e5; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: 500; margin-top: 15px; transition: background-color 0.3s ease;">Learn more about Bali</a>
+              <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zc0MsyoyDDMMmD04ktKzMlUyMxLyc9LLc5MBAB_PQlN&q=bali+indonesia&rlz=1C1ONGR_enIN980IN980&oq=bali+indo&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyBggCEEUYOTIKCAMQABixAxiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDINCAcQLhivARjHARiABDIHCAgQABiABDIHCAkQABiABNIBCTc0MTRqMGoxNagCCLACAfEFqvPZbcNgcyPxBarz2W3DYHMj&sourceid=chrome&ie=UTF-8" target = "_blank" class="explore-btn">Learn more about Bali</a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); margin: 40px 0;">
-
-        <div style="background-color: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 25px; margin-bottom: 40px; transition: transform 0.3s ease;">
-          <h3 style="font-size: 25px; color: #333; margin-top: 0;">Kyoto, Japan</h3>
-          <div style="display: flex; flex-wrap: wrap; gap: 30px;">
-            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kyoto" width="400" height="300" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); max-width: 100%;">
-            <div style="flex: 1; min-width: 300px;">
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Rating:</strong> 4.9/5 ⭐⭐⭐⭐⭐</p>
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Location:</strong> Japan</p>
-              <p style="font-size: 16px; line-height: 1.6;">Home to numerous classical Buddhist temples, gardens, imperial palaces, and traditional wooden houses. Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its numerous classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses.</p>
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Best time to visit:</strong> March-May and October-November</p>
-              <p style="font-size: 16px;"><strong style="color: #1e88e5;">Must-see attractions:</strong></p>
-              <ul style="padding-left: 20px;">
-                <li style="margin-bottom: 8px;">Fushimi Inari Shrine</li>
-                <li style="margin-bottom: 8px;">Kinkaku-ji (Golden Pavilion)</li>
-                <li style="margin-bottom: 8px;">Arashiyama Bamboo Grove</li>
-                <li style="margin-bottom: 8px;">Gion District</li>
+        <article class="destination-card">
+          <h3>Kyoto, Japan</h3>
+          <div class="destination-content">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kyoto">
+            <div class="destination-info">
+              <p class="rating">Rating: 4.9/5 ⭐⭐⭐⭐⭐</p>
+              <p class="location">Location: Japan</p>
+              <p class="description">Home to numerous classical Buddhist temples, gardens, imperial palaces, and traditional wooden houses. Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its numerous classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses.</p>
+              <p>Best time to visit: March-May and October-November</p>
+              <p>Must-see attractions:</p>
+              <ul>
+                <li>Fushimi Inari Shrine</li>
+                <li>Kinkaku-ji (Golden Pavilion)</li>
+                <li>Arashiyama Bamboo Grove</li>
+                <li>Gion District</li>
               </ul>
-              <a href="https://en.wikipedia.org/wiki/Kyoto" style="display: inline-block; background-color: #1e88e5; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: 500; margin-top: 15px; transition: background-color 0.3s ease;">Learn more about Kyoto</a>
+              <a href="https://www.google.com/search?q=kyoto+japan&sca_esv=3ee233fc35809b4c&rlz=1C1ONGR_enIN980IN980&ei=1oXKZ8mMC-Knvr0P3Ky7WQ&gs_ssp=eJzj4tDP1TewTDGJN2D04s6uzC_JV8hKLEjMAwBNiQck&oq=Kyoto&gs_lp=Egxnd3Mtd2l6LXNlcnAiBUt5b3RvKgIIADINEC4YgAQYsQMYQxiKBTIQEC4YgAQYQxjHARiKBRivATINEAAYgAQYsQMYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTINEC4YgAQYsQMYQxiKBTIIEAAYgAQYsQMyBRAAGIAEMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMhwQLhiABBixAxhDGIoFGJcFGNwEGN4EGOAE2AEBSN0lUOQBWNMYcAJ4AZABBJgBtgGgAZEMqgEEMC4xMLgBAcgBAPgBAZgCCaACzhGoAhTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICExAuGIAEGLADGEMYxwEYigUYrwHCAggQLhiABBixA8ICChAAGIAEGEMYigXCAhcQLhiABBixAxiXBRjcBBjeBBjgBNgBAcICExAAGIAEGEMYtAIYigUY6gLYAQLCAhkQLhiABBhDGLQCGMcBGIoFGOoCGK8B2AECwgIQEAAYAxi0AhjqAhiPAdgBAcICERAuGIAEGLEDGNEDGIMBGMcBwgIREC4YgAQYsQMY0QMYxwEYigXCAgsQLhiABBixAxiDAcICDhAuGIAEGLEDGIMBGIoFwgIFEC4YgATCAiAQLhiABBixAxjRAxiDARjHARiXBRjcBBjeBBjgBNgBAcICChAuGIAEGEMYigXCAhAQLhiABBixAxhDGIMBGIoFwgIZEC4YgAQYQxiKBRiXBRjcBBjeBBjgBNgBAcICCxAuGIAEGLEDGOUEwgIOEC4YgAQYsQMY0QMYxwHCAgsQABiABBixAxiKBcICDhAAGIAEGLEDGIMBGIoFmAMG8QUEN7ecqkhV6IgGAZAGCroGBggBEAEYFLoGBAgCGAeSBwcyLjYuNy0xoAeAowE&sclient=gws-wiz-serp" target = "_blank" class="explore-btn">Learn more about Kyoto</a>
             </div>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); margin: 40px 0;">
-
-      <div id="tips" style="margin-bottom: 60px;">
-        <h2 style="font-size: 2rem; color: #1e88e5; margin-bottom: 30px; border-bottom: 2px solid #1e88e5; padding-bottom: 10px;">Travel Tips</h2>
-        <div style="background-color: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 25px;">
-          <ol style="padding-left: 20px;">
-            <li style="margin-bottom: 20px;">
-              <h4 style="font-size: 21px; color: #1e88e5; margin-bottom: 10px;">Always check the weather forecast before packing</h4>
-              <p style="font-size: 16px; line-height: 1.6; margin-left: 10px;">This will help you pack appropriate clothing and plan suitable activities for your trip.</p>
+      <section id="tips">
+        <h2>Travel Tips</h2>
+        <div class="tips-container">
+          <ol class="tips-list">
+            <li>
+              <span class="tip-number">1</span>
+              <div>
+                <h4>Always check the weather forecast before packing</h4>
+                <p>This will help you pack appropriate clothing and plan suitable activities for your trip.</p>
+              </div>
             </li>
-            <li style="margin-bottom: 20px;">
-              <h4 style="font-size: 21px; color: #1e88e5; margin-bottom: 10px;">Research local customs and etiquette</h4>
-              <p style="font-size: 16px; line-height: 1.6; margin-left: 10px;">Understanding local customs helps you respect the culture and avoid unintentionally offending locals.</p>
+            <li>
+              <span class="tip-number">2</span>
+              <div>
+                <h4>Research local customs and etiquette</h4>
+                <p>Understanding local customs helps you respect the culture and avoid unintentionally offending locals.</p>
+              </div>
             </li>
-            <li style="margin-bottom: 20px;">
-              <h4 style="font-size: 21px; color: #1e88e5; margin-bottom: 10px;">Make digital copies of important documents</h4>
-              <p style="font-size: 16px; line-height: 1.6; margin-left: 10px;">Keep digital copies of your passport, ID, and travel insurance in your email or cloud storage.</p>
+            <li>
+              <span class="tip-number">3</span>
+              <div>
+                <h4>Make digital copies of important documents</h4>
+                <p>Keep digital copies of your passport, ID, and travel insurance in your email or cloud storage.</p>
+              </div>
             </li>
-            <li style="margin-bottom: 20px;">
-              <h4 style="font-size: 21px; color: #1e88e5; margin-bottom: 10px;">Learn basic phrases in the local language</h4>
-              <p style="font-size: 16px; line-height: 1.6; margin-left: 10px;">Knowing how to say "hello," "thank you," and "help" can make a big difference in your travel experience.</p>
+            <li>
+              <span class="tip-number">4</span>
+              <div>
+                <h4>Learn basic phrases in the local language</h4>
+                <p>Knowing how to say "hello," "thank you," and "help" can make a big difference in your travel experience.</p>
+              </div>
             </li>
-            <li style="margin-bottom: 0;">
-              <h4 style="font-size: 21px; color: #1e88e5; margin-bottom: 10px;">Purchase travel insurance</h4>
-              <p style="font-size: 16px; line-height: 1.6; margin-left: 10px;">Travel insurance can protect you from unexpected medical expenses, trip cancellations, and lost luggage.</p>
+            <li>
+              <span class="tip-number">5</span>
+              <div>
+                <h4>Purchase travel insurance</h4>
+                <p>Travel insurance can protect you from unexpected medical expenses, trip cancellations, and lost luggage.</p>
+              </div>
             </li>
           </ol>
         </div>
-      </div>
+      </section>
 
-      <hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); margin: 40px 0;">
-
-      <div id="about" style="margin-bottom: 60px;">
-        <h2 style="font-size: 2rem; color: #1e88e5; margin-bottom: 30px; border-bottom: 2px solid #1e88e5; padding-bottom: 10px;">About Our Travel Guide</h2>
-        <div style="background-color: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 25px;">
-          <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">Welcome to our Travel Destination Guide! We're passionate about helping travelers discover amazing destinations around the world. Our team of experienced travelers researches and visits each location to provide you with accurate and helpful information.</p>
-          <p style="font-size: 16px; line-height: 1.8; margin-bottom: 0;">Our mission is to inspire your wanderlust and make your travel planning easier. Whether you're a seasoned traveler or planning your first trip abroad, we're here to help you make the most of your adventures.</p>
+      <section id="about">
+        <h2>About Our Travel Guide</h2>
+        <div class="tips-container">
+          <p>Welcome to our Travel Destination Guide! We're passionate about helping travelers discover amazing destinations around the world. Our team of experienced travelers researches and visits each location to provide you with accurate and helpful information.</p>
+          <p>Our mission is to inspire your wanderlust and make your travel planning easier. Whether you're a seasoned traveler or planning your first trip abroad, we're here to help you make the most of your adventures.</p>
         </div>
-      </div>
+      </section>
 
-      <hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); margin: 40px 0;">
-
-      <div id="contact" style="margin-bottom: 60px;">
-        <h2 style="font-size: 2rem; color: #1e88e5; margin-bottom: 30px; border-bottom: 2px solid #1e88e5; padding-bottom: 10px;">Contact Us</h2>
-        <div style="background-color: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 25px;">
-          <p style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">Have questions or suggestions? We'd love to hear from you!</p>
-          <address style="font-style: normal; margin-bottom: 30px;">
-            <p style="font-size: 16px; margin-bottom: 10px;"><strong style="color: #1e88e5;">Email:</strong> <a href="mailto:info@traveldestinationguide.com" style="color: #1e88e5; text-decoration: none;">vardhans@traveldestinationguide.com</a></p>
-            <p style="font-size: 16px; margin-bottom: 10px;"><strong style="color: #1e88e5;">Phone:</strong> +91 9398432615</p>
-            <p style="font-size: 16px; margin-bottom: 0;"><strong style="color: #1e88e5;">Address:</strong> Vishakhapatnam, M.V.P Colony</p>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="tips-container">
+          <p>Have questions or suggestions? We'd love to hear from you!</p>
+          <address>
+            <p><strong>Email: </strong> <a href="mailto:info@traveldestinationguide.com">vardhans@traveldestinationguide.com</a></p>
+            <p><strong>Phone:</strong> +91 9398432615</p>
+            <p><strong>Address:</strong> Srikakulam, Andhra Pradesh</p>
           </address>
           
-          <h3 style="font-size: 1.5rem; color: #333; margin-bottom: 20px;">Send us a message</h3>
-          <form style="max-width: 600px;">
-            <div style="margin-bottom: 20px;">
-              <label for="name" style="display: block; font-size: 1.1rem; margin-bottom: 8px; font-weight: 500;">Name:</label>
-              <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+          <h3>Send us a message</h3>
+          <form>
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
             </div>
-            <div style="margin-bottom: 20px;">
-              <label for="email" style="display: block; font-size: 1.1rem; margin-bottom: 8px; font-weight: 500;">Email:</label>
-              <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
             </div>
-            <div style="margin-bottom: 20px;">
-              <label for="subject" style="display: block; font-size: 1.1rem; margin-bottom: 8px; font-weight: 500;">Subject:</label>
-              <input type="text" id="subject" name="subject" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+            <div>
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required>
             </div>
-            <div style="margin-bottom: 20px;">
-              <label for="message" style="display: block; font-size: 1.1rem; margin-bottom: 8px; font-weight: 500;">Message:</label>
-              <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; font-family: inherit;"></textarea>
+            <div>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit" style="background-color: #1e88e5; color: white; border: none; padding: 12px 24px; font-size: 1.1rem; font-weight: 500; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease;">Send Message</button>
+            <button type="submit" class="explore-btn">Send Message</button>
           </form>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <hr style="border: 0; height: 1px; background-color: #ddd; margin: 0;">
-
-    <footer style="background-color: #1f2937; color: white; padding: 40px 0;">
-      <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-        <div style="display: flex; flex-direction: column; gap: 20px;">
-          <p style="font-size: 1.1rem; text-align: center; margin: 0;">&copy; 2025 Travel Destination Guide. All rights reserved.</p>
-          <nav style="margin-top: 20px;">
-            <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-              <li><a href="#destinations" style="color: #9ca3af; text-decoration: none; transition: color 0.3s ease;">Destinations</a></li>
-              <li><a href="#tips" style="color: #9ca3af; text-decoration: none; transition: color 0.3s ease;">Travel Tips</a></li>
-              <li><a href="#about" style="color: #9ca3af; text-decoration: none; transition: color 0.3s ease;">About</a></li>
-              <li><a href="#contact" style="color: #9ca3af; text-decoration: none; transition: color 0.3s ease;">Contact</a></li>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <h3>Travel Destination Guide</h3>
+            </div>
+            <p>Helping travelers discover amazing destinations around the world since 2025.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#destinations">Destinations</a></li>
+              <li><a href="#tips">Travel Tips</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-          </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Travel Destination Guide. All rights reserved.</p>
         </div>
       </div>
     </footer>
